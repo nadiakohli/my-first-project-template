@@ -4,12 +4,10 @@
     "node": true,
     "es6": true
   },
-  "extends": ["airbnb/base", "eslint:recommended"],
+  "extends": ["airbnb", "eslint:recommended"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "single"],
     "no-plusplus": "off",
-    "eol-last": "warn",
     "no-unused-vars": "warn",
     "arrow-body-style": "error",
     "no-alert": "off"

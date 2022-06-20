@@ -5,7 +5,7 @@ const foo = (name) => {
   return lastName;
 };
 
-foo('Denis');
+foo('Bobie');
 
 const x = 200;
 
