@@ -1,0 +1,35 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "My first project template",
+  "main": "src/app.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadia Kohli",
+  "keywords": [
+    "project setup"
+  ],
+  "license": "unlicensed",
+  "devDependencies": {
+    "editorconfig-checker": "^4.0.2",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2"
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "browserslist": "^4.20.4"
+  }
+}
